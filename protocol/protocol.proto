@@ -1,0 +1,14 @@
+syntax = "proto3";
+package protocol;
+option go_package = "/;protocol";
+
+message Request {
+  uint64 sensorId = 1;
+  float temp = 2;
+  int64 timestamp = 3;
+}
+
+message Response {
+  uint64 sensorId = 1;
+  int64 timestamp = 2;
+}
